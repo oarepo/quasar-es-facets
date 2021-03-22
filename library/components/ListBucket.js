@@ -1,7 +1,7 @@
-import {computed, defineComponent, h, inject, ref, resolveComponent, Teleport, watch} from 'vue'
+import {computed, defineComponent, h, resolveComponent} from 'vue'
 import {useConfig} from "../composition/config"
 import {useComponent} from "../composition/component"
-import {useBucket, useBucketProps} from "app/library/composition/bucket";
+import {useBucket, useBucketProps} from "../composition/bucket";
 
 export default defineComponent({
   name: 'FacetsBucket',

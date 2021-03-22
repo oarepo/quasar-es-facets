@@ -1,5 +1,5 @@
-import {useComponent} from "app/library/composition/component";
-import {useConfig} from "app/library/composition/config";
+import {useComponent} from "./component";
+import {useConfig} from "./config";
 import {computed} from "vue";
 
 export function useBucketsComponents(prefix, props, attrs, emit,

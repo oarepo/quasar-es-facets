@@ -2,7 +2,7 @@ import {useComponent} from "../composition/component";
 import {computed, defineComponent, reactive, resolveComponent} from "vue";
 import {QSeparator, useQuasar} from "quasar";
 import {useSelection} from "../composition/selection";
-import {useFacets} from "app/library/composition/facets";
+import {useFacets} from "../composition/facets";
 
 export default defineComponent({
   name: 'Facets',
