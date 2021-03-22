@@ -1,0 +1,2613 @@
+{
+    "took": 1582,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 203,
+            "relation": "eq"
+        },
+        "max_score": null,
+        "hits": []
+    },
+    "aggregations": {
+        "sterms#aggs-in-aggs": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 169,
+            "buckets": [
+                {
+                    "key": "James",
+                    "doc_count": 4,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Jeffrey",
+                    "doc_count": 4,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "John",
+                    "doc_count": 4,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Mary",
+                    "doc_count": 4,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Chad",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Christopher",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Daniel",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Elizabeth",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Jennifer",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "Jessica",
+                    "doc_count": 3,
+                    "range#aggs-in-aggs-inner": {
+                        "buckets": [
+                            {
+                                "key": "*-50.0",
+                                "to": 50.0,
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "50.0-*",
+                                "from": 50.0,
+                                "doc_count": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "filters#filters-agg": {
+            "buckets": {
+                "john": {
+                    "doc_count": 4
+                },
+                "mary": {
+                    "doc_count": 4
+                }
+            }
+        },
+        "srareterms#rare-terms-agg": {
+            "buckets": [
+                {
+                    "key": "Alan",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Alexa",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Alexander",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Alexandra",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Alyssa",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Amber",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Amy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Angel",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Angela",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Ashlee",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Ashley",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Austin",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Barbara",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Beth",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Bethany",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Betty",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Bianca",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Bradley",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Brenda",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Brittney",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Brooke",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Bruce",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Calvin",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Cameron",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Carolyn",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Carrie",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Charles",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Christian",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Christine",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Clarence",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Cody",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Courtney",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Curtis",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Dakota",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Dana",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Dawn",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Deanna",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Denise",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Devon",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Diana",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Donald",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Eduardo",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Emily",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Eric",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Evan",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Isaac",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Janice",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Jared",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Jason",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Jimmy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Joseph",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Justin",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Karla",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Kathryn",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Katie",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Katrina",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Kenneth",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Krista",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Kristen",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Laura",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Linda",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Lindsey",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Lori",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Lorraine",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Lucas",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Mandy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Manuel",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Maria",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Marissa",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Matthew",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Monica",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Nancy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Patricia",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Randall",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Rhonda",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Robin",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Ross",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Russell",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Samuel",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Sandra",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Shane",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Shawn",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Sherri",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Sherry",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Sophia",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Stacy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Stephanie",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Stephen",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Steven",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Susan",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Suzanne",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Tanya",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Timothy",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Tina",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Tracey",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Trevor",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Victoria",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Yesenia",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Yolanda",
+                    "doc_count": 1
+                },
+                {
+                    "key": "Yvette",
+                    "doc_count": 1
+                }
+            ]
+        },
+        "filter#exists-agg": {
+            "doc_count": 200
+        },
+        "global#global-agg": {
+            "doc_count": 10000,
+            "sterms#global-terms-agg": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 8518,
+                "buckets": [
+                    {
+                        "key": "Michael",
+                        "doc_count": 220
+                    },
+                    {
+                        "key": "James",
+                        "doc_count": 173
+                    },
+                    {
+                        "key": "David",
+                        "doc_count": 171
+                    },
+                    {
+                        "key": "Jennifer",
+                        "doc_count": 164
+                    },
+                    {
+                        "key": "Christopher",
+                        "doc_count": 153
+                    },
+                    {
+                        "key": "John",
+                        "doc_count": 135
+                    },
+                    {
+                        "key": "Robert",
+                        "doc_count": 123
+                    },
+                    {
+                        "key": "William",
+                        "doc_count": 122
+                    },
+                    {
+                        "key": "Jessica",
+                        "doc_count": 111
+                    },
+                    {
+                        "key": "Matthew",
+                        "doc_count": 110
+                    }
+                ]
+            }
+        },
+        "auto_date_histogram#auto-date-histogram-agg": {
+            "buckets": [
+                {
+                    "key_as_string": "2016-01-01 00:00:00",
+                    "key": 1451606400000,
+                    "doc_count": 31
+                },
+                {
+                    "key_as_string": "2017-01-01 00:00:00",
+                    "key": 1483228800000,
+                    "doc_count": 33
+                },
+                {
+                    "key_as_string": "2018-01-01 00:00:00",
+                    "key": 1514764800000,
+                    "doc_count": 44
+                },
+                {
+                    "key_as_string": "2019-01-01 00:00:00",
+                    "key": 1546300800000,
+                    "doc_count": 42
+                },
+                {
+                    "key_as_string": "2020-01-01 00:00:00",
+                    "key": 1577836800000,
+                    "doc_count": 47
+                },
+                {
+                    "key_as_string": "2021-01-01 00:00:00",
+                    "key": 1609459200000,
+                    "doc_count": 6
+                }
+            ],
+            "interval": "1y"
+        },
+        "filter#filter-agg": {
+            "doc_count": 4,
+            "dterms#filter-fterms-agg": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": 0.699999988079071,
+                        "doc_count": 1
+                    },
+                    {
+                        "key": 7.699999809265137,
+                        "doc_count": 1
+                    },
+                    {
+                        "key": 8.5,
+                        "doc_count": 1
+                    },
+                    {
+                        "key": 9.899999618530273,
+                        "doc_count": 1
+                    }
+                ]
+            },
+            "lterms#filter-terms-agg": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": 3,
+                        "doc_count": 2
+                    },
+                    {
+                        "key": 4,
+                        "doc_count": 2
+                    }
+                ]
+            }
+        },
+        "range#range-agg": {
+            "buckets": [
+                {
+                    "key": "*-50.0",
+                    "to": 50.0,
+                    "doc_count": 200
+                },
+                {
+                    "key": "50.0-*",
+                    "from": 50.0,
+                    "doc_count": 0
+                }
+            ]
+        },
+        "variable_width_histogram#variable-width-histogram-agg": {
+            "buckets": [
+                {
+                    "min": 0.30000001192092896,
+                    "key": 2.045833339707719,
+                    "max": 3.799999952316284,
+                    "doc_count": 72
+                },
+                {
+                    "min": 3.9000000953674316,
+                    "key": 5.726923074477758,
+                    "max": 7.199999809265137,
+                    "doc_count": 78
+                },
+                {
+                    "min": 7.300000190734863,
+                    "key": 8.63773583466152,
+                    "max": 10.0,
+                    "doc_count": 53
+                }
+            ]
+        },
+        "sigsterms#significant-terms-agg": {
+            "doc_count": 203,
+            "bg_count": 40000,
+            "buckets": [
+                {
+                    "key": "Chad",
+                    "doc_count": 3,
+                    "score": 0.33465990438981774,
+                    "bg_count": 25
+                },
+                {
+                    "key": "Jeffrey",
+                    "doc_count": 4,
+                    "score": 0.24806432474995002,
+                    "bg_count": 58
+                },
+                {
+                    "key": "Mary",
+                    "doc_count": 4,
+                    "score": 0.2021611090503808,
+                    "bg_count": 70
+                },
+                {
+                    "key": "Tammy",
+                    "doc_count": 3,
+                    "score": 0.19322062101552018,
+                    "bg_count": 42
+                },
+                {
+                    "key": "Kevin",
+                    "doc_count": 3,
+                    "score": 0.1118297290482134,
+                    "bg_count": 69
+                },
+                {
+                    "key": "Elizabeth",
+                    "doc_count": 3,
+                    "score": 0.10016846090085071,
+                    "bg_count": 76
+                },
+                {
+                    "key": "John",
+                    "doc_count": 4,
+                    "score": 0.0953369589347167,
+                    "bg_count": 135
+                }
+            ]
+        },
+        "sterms#terms-agg": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 169,
+            "buckets": [
+                {
+                    "key": "James",
+                    "doc_count": 4
+                },
+                {
+                    "key": "Jeffrey",
+                    "doc_count": 4
+                },
+                {
+                    "key": "John",
+                    "doc_count": 4
+                },
+                {
+                    "key": "Mary",
+                    "doc_count": 4
+                },
+                {
+                    "key": "Chad",
+                    "doc_count": 3
+                },
+                {
+                    "key": "Christopher",
+                    "doc_count": 3
+                },
+                {
+                    "key": "Daniel",
+                    "doc_count": 3
+                },
+                {
+                    "key": "Elizabeth",
+                    "doc_count": 3
+                },
+                {
+                    "key": "Jennifer",
+                    "doc_count": 3
+                },
+                {
+                    "key": "Jessica",
+                    "doc_count": 3
+                }
+            ]
+        },
+        "nested#nested-agg": {
+            "doc_count": 203,
+            "sterms#nested-terms-agg": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 161,
+                "buckets": [
+                    {
+                        "key": "Michael",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "David",
+                        "doc_count": 6
+                    },
+                    {
+                        "key": "Brian",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "Christopher",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "James",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "Kimberly",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "Laura",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "Amanda",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "Courtney",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "Jennifer",
+                        "doc_count": 3
+                    }
+                ]
+            }
+        },
+        "missing#missing-agg": {
+            "doc_count": 3
+        },
+        "nested#double-nested-agg": {
+            "doc_count": 203,
+            "nested#inner-nested-agg": {
+                "doc_count": 203,
+                "sterms#double-nested-terms-agg": {
+                    "doc_count_error_upper_bound": 0,
+                    "sum_other_doc_count": 161,
+                    "buckets": [
+                        {
+                            "key": "Michael",
+                            "doc_count": 8
+                        },
+                        {
+                            "key": "Robert",
+                            "doc_count": 5
+                        },
+                        {
+                            "key": "Charles",
+                            "doc_count": 4
+                        },
+                        {
+                            "key": "Cynthia",
+                            "doc_count": 4
+                        },
+                        {
+                            "key": "Jeffrey",
+                            "doc_count": 4
+                        },
+                        {
+                            "key": "Jennifer",
+                            "doc_count": 4
+                        },
+                        {
+                            "key": "Matthew",
+                            "doc_count": 4
+                        },
+                        {
+                            "key": "Andrea",
+                            "doc_count": 3
+                        },
+                        {
+                            "key": "Ashley",
+                            "doc_count": 3
+                        },
+                        {
+                            "key": "Jason",
+                            "doc_count": 3
+                        }
+                    ]
+                }
+            }
+        },
+        "lrareterms#rare-terms-date-agg": {
+            "buckets": [
+                {
+                    "key": 1457740800000,
+                    "key_as_string": "2016-03-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1458432000000,
+                    "key_as_string": "2016-03-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1459468800000,
+                    "key_as_string": "2016-04-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1461974400000,
+                    "key_as_string": "2016-04-30 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1462320000000,
+                    "key_as_string": "2016-05-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1463011200000,
+                    "key_as_string": "2016-05-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1464220800000,
+                    "key_as_string": "2016-05-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1464912000000,
+                    "key_as_string": "2016-06-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1466812800000,
+                    "key_as_string": "2016-06-25 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1467763200000,
+                    "key_as_string": "2016-07-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1468368000000,
+                    "key_as_string": "2016-07-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1469059200000,
+                    "key_as_string": "2016-07-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1472774400000,
+                    "key_as_string": "2016-09-02 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1473379200000,
+                    "key_as_string": "2016-09-09 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1473724800000,
+                    "key_as_string": "2016-09-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1474070400000,
+                    "key_as_string": "2016-09-17 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1474761600000,
+                    "key_as_string": "2016-09-25 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1475452800000,
+                    "key_as_string": "2016-10-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1475712000000,
+                    "key_as_string": "2016-10-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1475798400000,
+                    "key_as_string": "2016-10-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1476489600000,
+                    "key_as_string": "2016-10-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1477440000000,
+                    "key_as_string": "2016-10-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1477612800000,
+                    "key_as_string": "2016-10-28 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1478044800000,
+                    "key_as_string": "2016-11-02 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1478563200000,
+                    "key_as_string": "2016-11-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1478736000000,
+                    "key_as_string": "2016-11-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1478995200000,
+                    "key_as_string": "2016-11-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1482278400000,
+                    "key_as_string": "2016-12-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1482624000000,
+                    "key_as_string": "2016-12-25 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1484956800000,
+                    "key_as_string": "2017-01-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1486684800000,
+                    "key_as_string": "2017-02-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1487462400000,
+                    "key_as_string": "2017-02-19 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1488585600000,
+                    "key_as_string": "2017-03-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1489881600000,
+                    "key_as_string": "2017-03-19 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1489968000000,
+                    "key_as_string": "2017-03-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1492819200000,
+                    "key_as_string": "2017-04-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1493596800000,
+                    "key_as_string": "2017-05-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1497916800000,
+                    "key_as_string": "2017-06-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1498089600000,
+                    "key_as_string": "2017-06-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1499385600000,
+                    "key_as_string": "2017-07-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1499817600000,
+                    "key_as_string": "2017-07-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1499904000000,
+                    "key_as_string": "2017-07-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1504224000000,
+                    "key_as_string": "2017-09-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1504828800000,
+                    "key_as_string": "2017-09-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1505260800000,
+                    "key_as_string": "2017-09-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1507161600000,
+                    "key_as_string": "2017-10-05 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1507507200000,
+                    "key_as_string": "2017-10-09 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1507852800000,
+                    "key_as_string": "2017-10-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1508025600000,
+                    "key_as_string": "2017-10-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1509667200000,
+                    "key_as_string": "2017-11-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1510099200000,
+                    "key_as_string": "2017-11-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1510185600000,
+                    "key_as_string": "2017-11-09 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1513036800000,
+                    "key_as_string": "2017-12-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1513814400000,
+                    "key_as_string": "2017-12-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1513900800000,
+                    "key_as_string": "2017-12-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1514419200000,
+                    "key_as_string": "2017-12-28 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1515456000000,
+                    "key_as_string": "2018-01-09 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1517356800000,
+                    "key_as_string": "2018-01-31 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1517443200000,
+                    "key_as_string": "2018-02-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1518566400000,
+                    "key_as_string": "2018-02-14 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1521763200000,
+                    "key_as_string": "2018-03-23 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1522022400000,
+                    "key_as_string": "2018-03-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1523404800000,
+                    "key_as_string": "2018-04-11 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1524787200000,
+                    "key_as_string": "2018-04-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1525305600000,
+                    "key_as_string": "2018-05-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1525392000000,
+                    "key_as_string": "2018-05-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1526256000000,
+                    "key_as_string": "2018-05-14 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1528070400000,
+                    "key_as_string": "2018-06-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1528848000000,
+                    "key_as_string": "2018-06-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1529107200000,
+                    "key_as_string": "2018-06-16 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1530921600000,
+                    "key_as_string": "2018-07-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1531008000000,
+                    "key_as_string": "2018-07-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1531526400000,
+                    "key_as_string": "2018-07-14 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1532476800000,
+                    "key_as_string": "2018-07-25 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1533859200000,
+                    "key_as_string": "2018-08-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1537056000000,
+                    "key_as_string": "2018-09-16 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1537488000000,
+                    "key_as_string": "2018-09-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1537574400000,
+                    "key_as_string": "2018-09-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1538179200000,
+                    "key_as_string": "2018-09-29 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1538352000000,
+                    "key_as_string": "2018-10-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1538611200000,
+                    "key_as_string": "2018-10-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1538697600000,
+                    "key_as_string": "2018-10-05 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1539129600000,
+                    "key_as_string": "2018-10-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1539993600000,
+                    "key_as_string": "2018-10-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1541116800000,
+                    "key_as_string": "2018-11-02 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1541289600000,
+                    "key_as_string": "2018-11-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1541808000000,
+                    "key_as_string": "2018-11-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1542499200000,
+                    "key_as_string": "2018-11-18 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1543104000000,
+                    "key_as_string": "2018-11-25 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1543276800000,
+                    "key_as_string": "2018-11-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1543363200000,
+                    "key_as_string": "2018-11-28 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1543968000000,
+                    "key_as_string": "2018-12-05 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1545868800000,
+                    "key_as_string": "2018-12-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1546041600000,
+                    "key_as_string": "2018-12-29 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1547251200000,
+                    "key_as_string": "2019-01-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1547596800000,
+                    "key_as_string": "2019-01-16 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1548288000000,
+                    "key_as_string": "2019-01-24 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1548806400000,
+                    "key_as_string": "2019-01-30 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1549756800000,
+                    "key_as_string": "2019-02-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1550448000000,
+                    "key_as_string": "2019-02-18 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1552521600000,
+                    "key_as_string": "2019-03-14 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1552608000000,
+                    "key_as_string": "2019-03-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1552867200000,
+                    "key_as_string": "2019-03-18 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1553385600000,
+                    "key_as_string": "2019-03-24 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1553904000000,
+                    "key_as_string": "2019-03-30 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1554508800000,
+                    "key_as_string": "2019-04-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1554595200000,
+                    "key_as_string": "2019-04-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1556323200000,
+                    "key_as_string": "2019-04-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1556668800000,
+                    "key_as_string": "2019-05-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1561593600000,
+                    "key_as_string": "2019-06-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1564790400000,
+                    "key_as_string": "2019-08-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1565395200000,
+                    "key_as_string": "2019-08-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1565654400000,
+                    "key_as_string": "2019-08-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1566000000000,
+                    "key_as_string": "2019-08-17 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1567468800000,
+                    "key_as_string": "2019-09-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1567555200000,
+                    "key_as_string": "2019-09-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1567814400000,
+                    "key_as_string": "2019-09-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1568851200000,
+                    "key_as_string": "2019-09-19 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1568937600000,
+                    "key_as_string": "2019-09-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1569196800000,
+                    "key_as_string": "2019-09-23 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1569283200000,
+                    "key_as_string": "2019-09-24 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1571616000000,
+                    "key_as_string": "2019-10-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1573171200000,
+                    "key_as_string": "2019-11-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1573776000000,
+                    "key_as_string": "2019-11-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1574726400000,
+                    "key_as_string": "2019-11-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1575936000000,
+                    "key_as_string": "2019-12-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1576454400000,
+                    "key_as_string": "2019-12-16 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1577145600000,
+                    "key_as_string": "2019-12-24 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1580515200000,
+                    "key_as_string": "2020-02-01 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1582761600000,
+                    "key_as_string": "2020-02-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1582934400000,
+                    "key_as_string": "2020-02-29 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1583539200000,
+                    "key_as_string": "2020-03-07 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1584316800000,
+                    "key_as_string": "2020-03-16 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1584403200000,
+                    "key_as_string": "2020-03-17 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1584662400000,
+                    "key_as_string": "2020-03-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1584835200000,
+                    "key_as_string": "2020-03-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1585872000000,
+                    "key_as_string": "2020-04-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1586304000000,
+                    "key_as_string": "2020-04-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1587340800000,
+                    "key_as_string": "2020-04-20 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1588464000000,
+                    "key_as_string": "2020-05-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1588550400000,
+                    "key_as_string": "2020-05-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1588723200000,
+                    "key_as_string": "2020-05-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1589241600000,
+                    "key_as_string": "2020-05-12 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1589760000000,
+                    "key_as_string": "2020-05-18 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1590192000000,
+                    "key_as_string": "2020-05-23 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1590451200000,
+                    "key_as_string": "2020-05-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1591228800000,
+                    "key_as_string": "2020-06-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1593734400000,
+                    "key_as_string": "2020-07-03 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1593820800000,
+                    "key_as_string": "2020-07-04 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1593907200000,
+                    "key_as_string": "2020-07-05 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1594339200000,
+                    "key_as_string": "2020-07-10 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1595808000000,
+                    "key_as_string": "2020-07-27 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1595980800000,
+                    "key_as_string": "2020-07-29 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1596672000000,
+                    "key_as_string": "2020-08-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1599523200000,
+                    "key_as_string": "2020-09-08 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1599782400000,
+                    "key_as_string": "2020-09-11 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1599955200000,
+                    "key_as_string": "2020-09-13 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1600128000000,
+                    "key_as_string": "2020-09-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1601078400000,
+                    "key_as_string": "2020-09-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1601424000000,
+                    "key_as_string": "2020-09-30 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1601942400000,
+                    "key_as_string": "2020-10-06 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1602374400000,
+                    "key_as_string": "2020-10-11 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1603238400000,
+                    "key_as_string": "2020-10-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1603411200000,
+                    "key_as_string": "2020-10-23 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1603929600000,
+                    "key_as_string": "2020-10-29 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1605052800000,
+                    "key_as_string": "2020-11-11 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1605916800000,
+                    "key_as_string": "2020-11-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1606003200000,
+                    "key_as_string": "2020-11-22 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1606348800000,
+                    "key_as_string": "2020-11-26 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1606521600000,
+                    "key_as_string": "2020-11-28 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1607472000000,
+                    "key_as_string": "2020-12-09 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1608768000000,
+                    "key_as_string": "2020-12-24 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1609286400000,
+                    "key_as_string": "2020-12-30 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1611187200000,
+                    "key_as_string": "2021-01-21 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1613260800000,
+                    "key_as_string": "2021-02-14 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1613347200000,
+                    "key_as_string": "2021-02-15 00:00:00",
+                    "doc_count": 1
+                },
+                {
+                    "key": 1614816000000,
+                    "key_as_string": "2021-03-04 00:00:00",
+                    "doc_count": 1
+                }
+            ]
+        },
+        "extended_stats#extended-stats-agg": {
+            "count": 200,
+            "min": 1.0,
+            "max": 10.0,
+            "avg": 5.455,
+            "sum": 1091.0,
+            "sum_of_squares": 7581.0,
+            "variance": 8.147975,
+            "variance_population": 8.147975,
+            "variance_sampling": 8.188919597989951,
+            "std_deviation": 2.85446579940976,
+            "std_deviation_population": 2.85446579940976,
+            "std_deviation_sampling": 2.8616288365177533,
+            "std_deviation_bounds": {
+                "upper": 11.16393159881952,
+                "lower": -0.2539315988195199,
+                "upper_population": 11.16393159881952,
+                "lower_population": -0.2539315988195199,
+                "upper_sampling": 11.178257673035507,
+                "lower_sampling": -0.2682576730355066
+            }
+        },
+        "date_histogram#date-histogram-agg": {
+            "buckets": [
+                {
+                    "key_as_string": "2016-03-01 00:00:00",
+                    "key": 1456790400000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2016-04-01 00:00:00",
+                    "key": 1459468800000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2016-05-01 00:00:00",
+                    "key": 1462060800000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2016-06-01 00:00:00",
+                    "key": 1464739200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2016-07-01 00:00:00",
+                    "key": 1467331200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2016-08-01 00:00:00",
+                    "key": 1470009600000,
+                    "doc_count": 0
+                },
+                {
+                    "key_as_string": "2016-09-01 00:00:00",
+                    "key": 1472688000000,
+                    "doc_count": 7
+                },
+                {
+                    "key_as_string": "2016-10-01 00:00:00",
+                    "key": 1475280000000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2016-11-01 00:00:00",
+                    "key": 1477958400000,
+                    "doc_count": 4
+                },
+                {
+                    "key_as_string": "2016-12-01 00:00:00",
+                    "key": 1480550400000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2017-01-01 00:00:00",
+                    "key": 1483228800000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2017-02-01 00:00:00",
+                    "key": 1485907200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2017-03-01 00:00:00",
+                    "key": 1488326400000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2017-04-01 00:00:00",
+                    "key": 1491004800000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2017-05-01 00:00:00",
+                    "key": 1493596800000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2017-06-01 00:00:00",
+                    "key": 1496275200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2017-07-01 00:00:00",
+                    "key": 1498867200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2017-08-01 00:00:00",
+                    "key": 1501545600000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2017-09-01 00:00:00",
+                    "key": 1504224000000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2017-10-01 00:00:00",
+                    "key": 1506816000000,
+                    "doc_count": 4
+                },
+                {
+                    "key_as_string": "2017-11-01 00:00:00",
+                    "key": 1509494400000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2017-12-01 00:00:00",
+                    "key": 1512086400000,
+                    "doc_count": 4
+                },
+                {
+                    "key_as_string": "2018-01-01 00:00:00",
+                    "key": 1514764800000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2018-02-01 00:00:00",
+                    "key": 1517443200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2018-03-01 00:00:00",
+                    "key": 1519862400000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2018-04-01 00:00:00",
+                    "key": 1522540800000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2018-05-01 00:00:00",
+                    "key": 1525132800000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2018-06-01 00:00:00",
+                    "key": 1527811200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2018-07-01 00:00:00",
+                    "key": 1530403200000,
+                    "doc_count": 4
+                },
+                {
+                    "key_as_string": "2018-08-01 00:00:00",
+                    "key": 1533081600000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2018-09-01 00:00:00",
+                    "key": 1535760000000,
+                    "doc_count": 4
+                },
+                {
+                    "key_as_string": "2018-10-01 00:00:00",
+                    "key": 1538352000000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2018-11-01 00:00:00",
+                    "key": 1541030400000,
+                    "doc_count": 9
+                },
+                {
+                    "key_as_string": "2018-12-01 00:00:00",
+                    "key": 1543622400000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2019-01-01 00:00:00",
+                    "key": 1546300800000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2019-02-01 00:00:00",
+                    "key": 1548979200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2019-03-01 00:00:00",
+                    "key": 1551398400000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2019-04-01 00:00:00",
+                    "key": 1554076800000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2019-05-01 00:00:00",
+                    "key": 1556668800000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2019-06-01 00:00:00",
+                    "key": 1559347200000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2019-07-01 00:00:00",
+                    "key": 1561939200000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2019-08-01 00:00:00",
+                    "key": 1564617600000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2019-09-01 00:00:00",
+                    "key": 1567296000000,
+                    "doc_count": 7
+                },
+                {
+                    "key_as_string": "2019-10-01 00:00:00",
+                    "key": 1569888000000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2019-11-01 00:00:00",
+                    "key": 1572566400000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2019-12-01 00:00:00",
+                    "key": 1575158400000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2020-01-01 00:00:00",
+                    "key": 1577836800000,
+                    "doc_count": 0
+                },
+                {
+                    "key_as_string": "2020-02-01 00:00:00",
+                    "key": 1580515200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2020-03-01 00:00:00",
+                    "key": 1583020800000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2020-04-01 00:00:00",
+                    "key": 1585699200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2020-05-01 00:00:00",
+                    "key": 1588291200000,
+                    "doc_count": 9
+                },
+                {
+                    "key_as_string": "2020-06-01 00:00:00",
+                    "key": 1590969600000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2020-07-01 00:00:00",
+                    "key": 1593561600000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2020-08-01 00:00:00",
+                    "key": 1596240000000,
+                    "doc_count": 1
+                },
+                {
+                    "key_as_string": "2020-09-01 00:00:00",
+                    "key": 1598918400000,
+                    "doc_count": 6
+                },
+                {
+                    "key_as_string": "2020-10-01 00:00:00",
+                    "key": 1601510400000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2020-11-01 00:00:00",
+                    "key": 1604188800000,
+                    "doc_count": 5
+                },
+                {
+                    "key_as_string": "2020-12-01 00:00:00",
+                    "key": 1606780800000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2021-01-01 00:00:00",
+                    "key": 1609459200000,
+                    "doc_count": 3
+                },
+                {
+                    "key_as_string": "2021-02-01 00:00:00",
+                    "key": 1612137600000,
+                    "doc_count": 2
+                },
+                {
+                    "key_as_string": "2021-03-01 00:00:00",
+                    "key": 1614556800000,
+                    "doc_count": 1
+                }
+            ]
+        },
+        "date_range#date-range-agg": {
+            "buckets": [
+                {
+                    "key": "*-2019-07-01 00:00:00",
+                    "to": 1561939200000.0,
+                    "to_as_string": "2019-07-01 00:00:00",
+                    "doc_count": 128
+                },
+                {
+                    "key": "2019-07-01 00:00:00-2020-05-01 00:00:00",
+                    "from": 1561939200000.0,
+                    "from_as_string": "2019-07-01 00:00:00",
+                    "to": 1588291200000.0,
+                    "to_as_string": "2020-05-01 00:00:00",
+                    "doc_count": 33
+                },
+                {
+                    "key": "2020-05-01 00:00:00-*",
+                    "from": 1588291200000.0,
+                    "from_as_string": "2020-05-01 00:00:00",
+                    "doc_count": 42
+                }
+            ]
+        },
+        "histogram#histogram-agg": {
+            "buckets": [
+                {
+                    "key": 0.0,
+                    "doc_count": 90
+                },
+                {
+                    "key": 5.0,
+                    "doc_count": 111
+                },
+                {
+                    "key": 10.0,
+                    "doc_count": 2
+                }
+            ]
+        },
+        "nested#reverse-nested-agg": {
+            "doc_count": 203,
+            "sterms#reverse-nested-terms": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 161,
+                "buckets": [
+                    {
+                        "key": "Michael",
+                        "doc_count": 7,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 7,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Alexa",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "James",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Manuel",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Marissa",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Richard",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Scott",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Suzanne",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "David",
+                        "doc_count": 6,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 6,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Courtney",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Justin",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Patricia",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Paul",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Scott",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Thomas",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Brian",
+                        "doc_count": 4,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 4,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Alexandra",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Charles",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Isaac",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Jacob",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Christopher",
+                        "doc_count": 4,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 4,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Daniel",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Kristen",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Rhonda",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Ryan",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "James",
+                        "doc_count": 4,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 4,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Brian",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Erica",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Sophia",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Tanya",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Kimberly",
+                        "doc_count": 4,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 4,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Jeffrey",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Jessica",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "John",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Mary",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Laura",
+                        "doc_count": 4,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 4,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Bianca",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Jeffrey",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Karla",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Kevin",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Amanda",
+                        "doc_count": 3,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 3,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Devon",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Michael",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Ryan",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Courtney",
+                        "doc_count": 3,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 3,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Matthew",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Sherri",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Stephen",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "key": "Jennifer",
+                        "doc_count": 3,
+                        "reverse_nested#reverse-nested-reverse": {
+                            "doc_count": 3,
+                            "sterms#reverse_nested_top-terms": {
+                                "doc_count_error_upper_bound": 0,
+                                "sum_other_doc_count": 0,
+                                "buckets": [
+                                    {
+                                        "key": "Alyssa",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Chad",
+                                        "doc_count": 1
+                                    },
+                                    {
+                                        "key": "Elizabeth",
+                                        "doc_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "sigsterms#significant-text-agg": {
+            "doc_count": 203,
+            "bg_count": 40000,
+            "buckets": [
+                {
+                    "key": "but",
+                    "doc_count": 203,
+                    "score": 196.04433497536948,
+                    "bg_count": 203
+                },
+                {
+                    "key": "beautiful",
+                    "doc_count": 12,
+                    "score": 0.5593614420082218,
+                    "bg_count": 226
+                },
+                {
+                    "key": "design",
+                    "doc_count": 12,
+                    "score": 0.5539362249687408,
+                    "bg_count": 228
+                },
+                {
+                    "key": "word",
+                    "doc_count": 11,
+                    "score": 0.5272488058337733,
+                    "bg_count": 202
+                },
+                {
+                    "key": "matter",
+                    "doc_count": 11,
+                    "score": 0.5159587864560645,
+                    "bg_count": 206
+                },
+                {
+                    "key": "plant",
+                    "doc_count": 11,
+                    "score": 0.47967676963770056,
+                    "bg_count": 220
+                },
+                {
+                    "key": "window",
+                    "doc_count": 10,
+                    "score": 0.443460616077041,
+                    "bg_count": 197
+                },
+                {
+                    "key": "when",
+                    "doc_count": 11,
+                    "score": 0.42520085517281003,
+                    "bg_count": 245
+                },
+                {
+                    "key": "four",
+                    "doc_count": 10,
+                    "score": 0.40859823165575215,
+                    "bg_count": 212
+                },
+                {
+                    "key": "drive",
+                    "doc_count": 10,
+                    "score": 0.4022094970222695,
+                    "bg_count": 215
+                }
+            ]
+        }
+    }
+}

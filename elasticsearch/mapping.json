@@ -1,0 +1,211 @@
+{
+  "mappings": {
+    "properties": {
+      "s": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "i": {
+        "type": "integer"
+      },
+      "f": {
+        "type": "float"
+      },
+      "k": {
+        "type": "keyword"
+      },
+      "b": {
+        "type": "boolean"
+      },
+      "d": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "o": {
+        "type": "object",
+        "properties": {
+          "s": {
+            "type": "text",
+            "fields": {
+              "raw": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "i": {
+            "type": "integer"
+          },
+          "f": {
+            "type": "float"
+          },
+          "k": {
+            "type": "keyword"
+          },
+          "b": {
+            "type": "boolean"
+          },
+          "d": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+          },
+          "o": {
+            "type": "object",
+            "properties": {
+              "s": {
+                "type": "text",
+                "fields": {
+                  "raw": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "i": {
+                "type": "integer"
+              },
+              "f": {
+                "type": "float"
+              },
+              "k": {
+                "type": "keyword"
+              },
+              "b": {
+                "type": "boolean"
+              },
+              "d": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+              }
+            }
+          },
+          "n": {
+            "type": "nested",
+            "properties": {
+              "s": {
+                "type": "text",
+                "fields": {
+                  "raw": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "i": {
+                "type": "integer"
+              },
+              "f": {
+                "type": "float"
+              },
+              "k": {
+                "type": "keyword"
+              },
+              "b": {
+                "type": "boolean"
+              },
+              "d": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+              }
+            }
+          }
+        }
+      },
+      "n": {
+        "type": "nested",
+        "properties": {
+          "s": {
+            "type": "text",
+            "fields": {
+              "raw": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "i": {
+            "type": "integer"
+          },
+          "f": {
+            "type": "float"
+          },
+          "k": {
+            "type": "keyword"
+          },
+          "b": {
+            "type": "boolean"
+          },
+          "d": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+          },
+          "o": {
+            "type": "object",
+            "properties": {
+              "s": {
+                "type": "text",
+                "fields": {
+                  "raw": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "i": {
+                "type": "integer"
+              },
+              "f": {
+                "type": "float"
+              },
+              "k": {
+                "type": "keyword"
+              },
+              "b": {
+                "type": "boolean"
+              },
+              "d": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+              }
+            }
+          },
+          "n": {
+            "type": "nested",
+            "properties": {
+              "s": {
+                "type": "text",
+                "fields": {
+                  "raw": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "i": {
+                "type": "integer"
+              },
+              "f": {
+                "type": "float"
+              },
+              "k": {
+                "type": "keyword"
+              },
+              "b": {
+                "type": "boolean"
+              },
+              "d": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

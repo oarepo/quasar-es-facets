@@ -1,0 +1,12 @@
+// app global css in SCSS form
+.flex-left-important {
+  align-items: start !important;
+  justify-content: start
+}
+
+.q-expansion-item--collapsed {
+  .values-selected {
+    background-color: #eeffee;
+    border-left: 2px solid green;
+  }
+}

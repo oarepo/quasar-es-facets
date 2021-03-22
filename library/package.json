@@ -1,0 +1,17 @@
+{
+  "name": "@oarepo/quasar-es-facets",
+  "version": "1.0.0a2",
+  "description": "Displaying ES facets (aggregations) in Quasar application",
+  "productName": "Quasar Elasticsearch Facets",
+  "author": "Mirek Simek <miroslav.simek@vscht.cz>",
+  "homepage": "https://github.com/oarepo/quasar-es-facets",
+  "private": false,
+  "main": "index.js",
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "quasar": "^2.0.0-beta.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
