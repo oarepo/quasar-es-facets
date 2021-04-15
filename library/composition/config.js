@@ -41,16 +41,25 @@ function defun(obj, params) {
 export function useConfig(definition, options) {
 
   function findFacetOption(key, facet, extra = {}) {
-    const opt = findOption(key, facet.definition.key, facet.definition.path)
+    const opt = findOption(
+      key, facet.definition.key,
+      facet.definition.path, facet.definition.type)
     return defun(opt, {
       facet,
       ...extra
     })
   }
 
-  function findOption(key, facetKey, facetPath) {
+  function findOption(key, facetKey, facetPath, facetType) {
+    // console.log('findOption called with', key, facetKey, facetPath, facetType, options)
     let ret = internalFindOption(DEFAULT_OPTIONS || {}, `defaults.${key}`)
+    if (facetType) {
+      ret = internalFindOption(DEFAULT_OPTIONS || {}, `types.${facetType}.${key}`, ret)
+    }
     ret = internalFindOption(options || {}, `defaults.${key}`, ret)
+    if (facetType) {
+      ret = internalFindOption(options || {}, `types.${facetType}.${key}`, ret)
+    }
     ret = internalFindOption(options || {}, `${facetPath}.${key}`, ret)
     ret = internalFindOption(definition || {}, `${key}`, ret)
     return ret

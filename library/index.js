@@ -31,3 +31,12 @@ export default {
     Vue.component('FacetsTabsBucketsTab', FacetsTabsBucketsTab)
   }
 }
+
+export * from './composition/bucket.js'
+export * from './composition/buckets.js'
+export * from './composition/component.js'
+export * from './composition/config.js'
+export * from './composition/facet.js'
+export * from './composition/facets.js'
+export * from './composition/facetlist.js'
+export * from './composition/selection.js'

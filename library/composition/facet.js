@@ -21,7 +21,6 @@ export function useShownFacets(props, c, facetComponentName, forceVisible = fals
 
   const preprocessedFacets = computed(() => {
     let facets = props.facets.listFacets()
-
     // remove non-visible facets
     if (!forceVisible) {
       facets = facets.filter(facet => !facet.definition.hidden)
@@ -29,7 +28,9 @@ export function useShownFacets(props, c, facetComponentName, forceVisible = fals
 
     // set facet rendering component
     facets.forEach(facet => {
-      facet.definition[`${facetComponentName}Component`] = c.getComponent(facetComponentName, facet)
+      if (!facet.definition[`${facetComponentName}Component`]) {
+        facet.definition[`${facetComponentName}Component`] = c.getComponent(facetComponentName, facet)
+      }
     })
 
     return facets

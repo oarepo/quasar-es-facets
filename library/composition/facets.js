@@ -81,6 +81,11 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
               this.aggs[kk].mergeFacetWith(vv)
             }
           }
+        } else if (k.indexOf('#') > 0) {
+          const withoutType = k.split('#').pop()
+          if (this.aggs[withoutType]) {
+            this.aggs[withoutType].mergeFacetWith(v)
+          }
         } else {
           // set on this instance
           this[k] = v
