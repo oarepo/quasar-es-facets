@@ -17,7 +17,7 @@ export function useBucketsComponents(prefix, props, attrs, emit,
 
   function bucketSelected(bucket) {
     const selected = selectedValues.value
-    selected.add(bucket.key)
+    selected.add(bucket.selection_key || bucket.key)
     emit('facetSelected', {
       facet: props.facet,
       selection: selected
@@ -26,7 +26,7 @@ export function useBucketsComponents(prefix, props, attrs, emit,
 
   function bucketUnselected(bucket) {
     let selected = selectedValues.value
-    selected.delete(bucket.key)
+    selected.delete(bucket.selection_key || bucket.key)
 
     emit('facetSelected', {
       facet: props.facet,

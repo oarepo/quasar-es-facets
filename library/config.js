@@ -31,6 +31,15 @@ export const DEFAULT_OPTIONS = {
       components: {
         facet: {component: 'facets-unknown'}
       }
+    },
+    date_histogram: {
+      facetPreprocessor: (facet) => {
+        let previous = '';
+        (facet.buckets || []).forEach(bucket => {
+          bucket.selection_key = previous + '--' + bucket.key_as_string
+          previous = bucket.key_as_string
+        })
+      }
     }
   },
 

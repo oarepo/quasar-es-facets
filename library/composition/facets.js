@@ -59,45 +59,53 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
         }
       })
     },
-    mergeFacetWith(another) {
+    mergeFacetWith(another, config) {
       // TODO: facets in buckets
       // at first clear everything but definition and sub-aggs
       this.clearFacet()
 
+      if (this.definition && (this.definition.type || another['__runtime_type'])) {
+
+        if (another['__runtime_type'] && this.definition && !this.definition.type) {
+          this.definition.type = another['__runtime_type']
+          delete this.definition.facetComponent
+          delete this.definition.drawerFacetComponent
+        }
+
+        // preprocess the value
+        const preprocessor = config.findFacetOption('facetPreprocessor', this)
+        if (preprocessor) {
+          another = preprocessor(another) || another
+        }
+      }
+
       // iterate through another and set
-      let runtimeType
       for (const [k, v] of Object.entries(another)) {
         if (k === 'definition') {
           continue  // do not merge definition even if present
         }
         if (k === '__runtime_type') {
-          runtimeType = v
-          continue
+          continue   // already processed above
         }
         if (k === 'aggs') {
           // recursively merge contained aggregations
           for (const [kk, vv] of Object.entries(v)) {
             if (this.aggs[kk]) {
-              this.aggs[kk].mergeFacetWith(vv)
+              this.aggs[kk].mergeFacetWith(vv, config)
             }
           }
         } else if (k.indexOf('#') > 0) {
           const withoutType = k.split('#').pop()
           if (this.aggs[withoutType]) {
-            this.aggs[withoutType].mergeFacetWith(v)
+            this.aggs[withoutType].mergeFacetWith(v, config)
           }
         } else {
           // set on this instance
           this[k] = v
         }
       }
-      if (runtimeType && this.definition && !this.definition.type) {
-        this.definition.type = runtimeType
-        delete this.definition.facetComponent
-        delete this.definition.drawerFacetComponent
-      }
     },
-    async loadFacet(excluded = [], extras = {}) {
+    async loadFacet(excluded = [], extras = {}, config = null) {
       const aggs = await facetLoader(
         facetSelection,
         {...activeFacets, [this.definition.path]: this},
@@ -111,7 +119,7 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
         if (!data[0].facet) {
           return
         }
-        this.mergeFacetWith(data[0].facet)
+        this.mergeFacetWith(data[0].facet, config)
       } else {
         this.clearFacet()
       }

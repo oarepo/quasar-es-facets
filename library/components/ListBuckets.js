@@ -26,7 +26,7 @@ export default defineComponent({
 
     watch(expanded, async () => {
       if (expanded.value) {
-        props.facet.loadFacet()
+        props.facet.loadFacet([], {}, config)
         emit('facetActivated', props.facet)
       } else {
         emit('facetDeactivated', props.facet)
@@ -80,7 +80,7 @@ export default defineComponent({
       // duplicate the facet so that its data are not influenced
       const duplicatedFacet = reactive(deepcopy(toRaw(props.facet)))
       await duplicatedFacet.loadFacet(
-        [duplicatedFacet.definition.path], {allValues: true}
+        [duplicatedFacet.definition.path], {allValues: true}, config
       )
 
       $q.dialog({

@@ -1,4 +1,5 @@
 import {useComponent} from "../composition/component";
+import {useConfig} from "../composition/config";
 import {computed, defineComponent, h, ref, watch} from "vue";
 import {useFacetListProps} from "../composition/facetlist";
 import {useShownFacets} from "../composition/facet";
@@ -12,6 +13,7 @@ export default defineComponent({
   emits: ['facetSelected'],
   setup(props, {attrs, emit}) {
     const c = useComponent(props, attrs, true)
+    const config = useConfig(props, attrs)
     const selectedTab = ref(null)
 
     const {preprocessedFacets} = useShownFacets(
@@ -37,7 +39,8 @@ export default defineComponent({
       if (selectedFacet.value) {
         await selectedFacet.value.loadFacet(
           [selectedFacet.value.definition.path],
-          {allValues: true})
+          {allValues: true},
+          config)
         loadedFacet.value = selectedFacet.value
       }
     })
