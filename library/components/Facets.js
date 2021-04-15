@@ -1,5 +1,5 @@
 import {useComponent} from "../composition/component";
-import {computed, defineComponent, reactive, resolveComponent} from "vue";
+import {computed, defineComponent, reactive, resolveComponent, Teleport, h} from "vue";
 import {QSeparator, useQuasar} from "quasar";
 import {useSelection} from "../composition/selection";
 import {useFacets} from "../composition/facets";
@@ -22,6 +22,9 @@ export default defineComponent({
     facetLoader: {
       type: Function,
       required: true
+    },
+    teleport: {
+      type: String
     }
   },
   emits: ['facetSelected'],
@@ -86,7 +89,7 @@ export default defineComponent({
     return () => {
       const ret = []
       if (props.drawer) {
-        ret.push(c.hd(drawerComponent.value, {
+        const drawer = () => c.hd(drawerComponent.value, {
           options: props.options,
           facets,
           facetSelection,
@@ -94,7 +97,19 @@ export default defineComponent({
             void reload()
             emit('facetSelected', facetSelection)
           },
-        }))
+        });
+        if (props.teleport) {
+          const teleport = h(
+            Teleport,
+            {
+              to: props.teleport
+            },
+            {default: () => [drawer()]}
+          )
+          ret.push(teleport)
+        } else {
+          ret.push(drawer())
+        }
       }
       ret.push(c.hd(facetListComponent.value, {
         options: props.options,

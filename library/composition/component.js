@@ -40,6 +40,13 @@ export function useComponent(definition, options) {
     return component
   }
 
+  function resolveComponentIfNeeded(c) {
+    if (typeof c === 'string') {
+      return resolveComponent(c)
+    }
+    return c
+  }
+
   function hd(component, extra = {}, children) {
     if (!component) {
       return h('div')
@@ -50,7 +57,7 @@ export function useComponent(definition, options) {
       style: extra.style !== null ? merge(component.style, extra.style) : undefined
     }
     return h(
-      component.html ? component.component : resolveComponent(component.component), props1,
+      component.html ? component.component : resolveComponentIfNeeded(component.component), props1,
       children || undefined
     )
   }

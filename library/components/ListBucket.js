@@ -10,8 +10,8 @@ export default defineComponent({
   },
   emits: ['update:modelValue'],
   setup(props, {attrs, emit}) {
-    const c = useComponent(props, attrs, false)
-    const config = useConfig(props, false)
+    const c = useComponent(props.facet.definition, props.options, false)
+    const config = useConfig(props.facet.definition, props.options)
     const vue = {
       props, attrs, emit
     }
@@ -35,12 +35,16 @@ export default defineComponent({
             'onUpdate:modelValue': checkboxClicked
           })
         ]
-        children.push(c.hd(labelComponent.value, {class: 'col'},
-          c.slotOrChildren(labelComponent.value, () => bucketLabel.value)))
-        children.push(c.hd(valueComponent.value, {
-            title: `+/- ${props.facet.doc_count_error_upper_bound}`
-          },
-          c.slotOrChildren(valueComponent.value, () => bucketValue.value.toString())))
+        if (labelComponent.value && labelComponent.value.component) {
+          children.push(c.hd(labelComponent.value, {class: 'col'},
+            c.slotOrChildren(labelComponent.value, () => bucketLabel.value)))
+        }
+        if (valueComponent.value && valueComponent.value.component) {
+          children.push(c.hd(valueComponent.value, {
+              title: `+/- ${props.facet.doc_count_error_upper_bound}`
+            },
+            c.slotOrChildren(valueComponent.value, () => bucketValue.value.toString())))
+        }
         return children
       }
 

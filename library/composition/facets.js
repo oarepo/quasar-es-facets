@@ -5,7 +5,21 @@ function findPath(obj, path) {
   path = path.split('.')
   const ret = []
   for (const p of path) {
-    const facet = obj && obj[p]
+    let facet = obj && obj[p]
+    if (!facet) {
+      // potential typed keys ...
+      if (obj) {
+        Object.entries(obj).find(([key, value]) => {
+          key = key.split('#')
+          if (key[key.length - 1] === p) {
+            facet = value
+            facet.__runtime_type = key[0]
+            return true
+          }
+          return false
+        })
+      }
+    }
     ret.push({
       key: p,
       parent: obj,
@@ -51,9 +65,14 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
       this.clearFacet()
 
       // iterate through another and set
+      let runtimeType
       for (const [k, v] of Object.entries(another)) {
         if (k === 'definition') {
           continue  // do not merge definition even if present
+        }
+        if (k === '__runtime_type') {
+          runtimeType = v
+          continue
         }
         if (k === 'aggs') {
           // recursively merge contained aggregations
@@ -67,8 +86,11 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
           this[k] = v
         }
       }
+      if (runtimeType && this.definition && !this.definition.type) {
+        this.definition.type = runtimeType
+      }
     },
-    async loadFacet(excluded=[], extras={}) {
+    async loadFacet(excluded = [], extras = {}) {
       const aggs = await facetLoader(
         facetSelection,
         {...activeFacets, [this.definition.path]: this},
@@ -78,6 +100,7 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
         }
       )
       if (aggs) {
+        console.log('loadFacet called', this.definition.path, aggs)
         const data = findPath(aggs, this.definition.path)
         if (!data[0].facet) {
           return

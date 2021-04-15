@@ -4,8 +4,8 @@ import {computed} from "vue";
 
 export function useBucketsComponents(prefix, props, attrs, emit,
                                      bucketFilter = (bucket, selectedValues) => true) {
-  const c = useComponent(props, attrs, false)
-  const config = useConfig(props, false)
+  const c = useComponent(props.facet.definition, props.options, false)
+  const config = useConfig(props.facet.definition, props.options)
 
   const selectedValues = computed(() => {
     return props.facetSelection[props.facet.definition.path]

@@ -43,8 +43,8 @@ export const DEFAULT_OPTIONS = {
       drawer: {
         component: 'facets-drawer',
         attrs: {},
-        style: {'border-bottom': '1px solid #eeeeee'},
-        class: ['q-mb-md', 'q-pb-md']
+        style: {},
+        class: []
       },
       facetListComponent: {
         component: 'q-list'
