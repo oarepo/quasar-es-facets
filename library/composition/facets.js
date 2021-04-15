@@ -26,7 +26,7 @@ function findPath(obj, path) {
       facet: facet
     })
     if (facet) {
-      obj = facet.aggs
+      obj = facet.aggs || facet
     }
     // TODO: obj in buckets
   }
