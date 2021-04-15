@@ -88,6 +88,8 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
       }
       if (runtimeType && this.definition && !this.definition.type) {
         this.definition.type = runtimeType
+        delete this.definition.facetComponent
+        delete this.definition.drawerFacetComponent
       }
     },
     async loadFacet(excluded = [], extras = {}) {
@@ -100,7 +102,6 @@ function facetMethods(facetLoader, facetSelection, activeFacets) {
         }
       )
       if (aggs) {
-        console.log('loadFacet called', this.definition.path, aggs)
         const data = findPath(aggs, this.definition.path)
         if (!data[0].facet) {
           return

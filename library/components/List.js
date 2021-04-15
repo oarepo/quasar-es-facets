@@ -22,6 +22,9 @@ export default defineComponent({
       return c.hd(listComponent.value, {},
         {
           default: () => preprocessedFacets.value.map(facet => {
+              if (!facet.definition.facetComponent) {
+                facet.definition.facetComponent = c.getComponent('facet', facet)
+              }
               return c.hd(facet.definition.facetComponent, {
                 options: props.options,
                 facet,
