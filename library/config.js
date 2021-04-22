@@ -19,7 +19,9 @@ export const DEFAULT_OPTIONS = {
     },
     nested: {
       components: {
-        facet: {component: 'facets-unknown'}
+        facet: {
+          component: 'nested-facet'
+        }
       }
     },
     missing: {
