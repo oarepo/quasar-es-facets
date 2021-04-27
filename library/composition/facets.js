@@ -39,11 +39,11 @@ function facetsMethods(facetLoader, facetSelection, activeFacets) {
     listFacets() {
       return Object.values(this).filter(x => !!x.definition)
     },
-    async loadFacets() {
+    async loadFacets(paths, config) {
       const aggs = await facetLoader(facetSelection, activeFacets)
       for (const [key, facet] of Object.entries(this)) {
         if (facet.definition && aggs[key]) {
-          facet.mergeFacetWith(aggs[key])
+          facet.mergeFacetWith(aggs[key], config)
         }
       }
     }

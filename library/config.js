@@ -9,7 +9,9 @@ export const DEFAULT_OPTIONS = {
     },
     filter: {
       components: {
-        facet: {component: 'facets-unknown'}
+        facet: {
+          component: 'filter-facet'
+        }
       }
     },
     global: {

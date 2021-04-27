@@ -11,6 +11,7 @@ import FacetsDrawerBuckets from './components/DrawerBuckets.js'
 import FacetsDrawerBucket from './components/DrawerBucket.js'
 import FacetsTabsBucketsTab from './components/TabsBucketsTab.js'
 import NestedFacet from './components/NestedFacet.js'
+import FilterFacet from './components/FilterFacet.js'
 import FacetsAdditionalDialog from './dialogs/AdditionalDialog.js'
 import MoreFiltersDialog from './dialogs/MoreFiltersDialog.js'
 
@@ -31,6 +32,7 @@ export default {
     Vue.component('FacetsDrawerBucket', FacetsDrawerBucket)
     Vue.component('FacetsTabsBucketsTab', FacetsTabsBucketsTab)
     Vue.component('NestedFacet', NestedFacet)
+    Vue.component('FilterFacet', FilterFacet)
   }
 }
 

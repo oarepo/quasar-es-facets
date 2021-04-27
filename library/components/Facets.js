@@ -3,6 +3,7 @@ import {computed, defineComponent, reactive, resolveComponent, Teleport, h} from
 import {QSeparator, useQuasar} from "quasar";
 import {useSelection} from "../composition/selection";
 import {useFacets} from "../composition/facets";
+import { useConfig } from '../composition/config';
 
 export default defineComponent({
   name: 'Facets',
@@ -30,6 +31,7 @@ export default defineComponent({
   emits: ['facetSelected'],
   setup(props, {attrs, emit}) {
     const c = useComponent(props.definition, props.options)
+    const config = useConfig(props.definition, props.options)
     const $q = useQuasar()
 
     const facetSelection = useSelection()
@@ -59,7 +61,7 @@ export default defineComponent({
       for (const path of Object.keys(activeFacets)) {
         pathsToLoad.add(path)
       }
-      await facets.loadFacets(Array.from(pathsToLoad))
+      await facets.loadFacets(Array.from(pathsToLoad), config)
     }
 
     function openExtendedFacetsDialog() {

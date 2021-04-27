@@ -3,7 +3,7 @@ import {computed, defineComponent, h, unref} from "vue";
 import {useShownFacets, useFacetProps} from "../composition/facet";
 
 export default defineComponent({
-  name: 'NestedFacet',
+  name: 'FilterFacet',
   props: {
     ...useFacetProps()
   },
