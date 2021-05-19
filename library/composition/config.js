@@ -1,4 +1,4 @@
-import {DEFAULT_OPTIONS} from "../config";
+import {DEFAULT_OPTIONS} from '../config'
 
 import * as deepcopy from 'deepcopy'
 import deepmerge from 'deepmerge'
@@ -51,7 +51,7 @@ export function useConfig(definition, options) {
   }
 
   function findOption(key, facetKey, facetPath, facetType) {
-    // console.log('findOption called with', key, facetKey, facetPath, facetType, options)
+    // console.groupCollapsed(`findOption called with key ${key}, facetKey ${facetKey}, facetPath ${facetPath}, facetType ${facetType}, options`, options)
     let ret = internalFindOption(DEFAULT_OPTIONS || {}, `defaults.${key}`)
     if (facetType) {
       ret = internalFindOption(DEFAULT_OPTIONS || {}, `types.${facetType}.${key}`, ret)
@@ -62,6 +62,7 @@ export function useConfig(definition, options) {
     }
     ret = internalFindOption(options || {}, `${facetPath}.${key}`, ret)
     ret = internalFindOption(definition || {}, `${key}`, ret)
+    // console.groupEnd()
     return ret
   }
 
@@ -78,6 +79,7 @@ export function useConfig(definition, options) {
   }
 
   function internalFindOption(obj, path, previous) {
+    // console.log('config internal find option', path)
     path = path.split('.')
     for (const p of path) {
       obj = obj[p]

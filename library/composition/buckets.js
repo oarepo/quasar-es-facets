@@ -1,6 +1,6 @@
-import { useComponent } from './component';
-import { useConfig } from './config';
-import { computed } from 'vue';
+import {useComponent} from './component';
+import {useConfig} from './config';
+import {computed} from 'vue';
 
 export function useBucketsComponents(prefix, props, attrs, emit,
                                      bucketFilter = (bucket, selectedValues) => true) {
@@ -50,6 +50,9 @@ export function useBucketsComponents(prefix, props, attrs, emit,
             } else {
               bucketUnselected(bucket);
             }
+          },
+          onFacetSelected: (value) => {
+            emit('facetSelected', value);
           }
         });
       });
@@ -59,5 +62,5 @@ export function useBucketsComponents(prefix, props, attrs, emit,
     return props.facet.definition.label || props.facet.definition.path;
   });
 
-  return { c, config, selectedValues, renderChildren, label };
+  return {c, config, selectedValues, renderChildren, label};
 }
