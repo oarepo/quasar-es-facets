@@ -2,7 +2,7 @@ import {useConfig} from "../composition/config";
 import {useComponent} from "../composition/component";
 import {computed, defineComponent} from "vue";
 import {useFacetListProps} from "../composition/facetlist";
-import {useFacets, useShownFacets} from "../composition/facet";
+import {useShownFacets} from "../composition/facet";
 
 export default defineComponent({
   name: 'FacetsList',

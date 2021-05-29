@@ -33,7 +33,6 @@ export default defineComponent({
     const c = useComponent(props.definition, props.options)
     const config = useConfig(props.definition, props.options)
     const $q = useQuasar()
-
     const facetSelection = useSelection()
     const activeFacets = reactive({})
 

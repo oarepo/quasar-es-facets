@@ -1,5 +1,4 @@
 import {computed, defineComponent, h, ref, resolveComponent} from 'vue'
-import {useConfigProps} from "../composition/config";
 import {useFacetProps} from "../composition/facet";
 import {useBucketsComponents} from "../composition/buckets";
 import {QTab, useQuasar} from "quasar";
