@@ -1,6 +1,6 @@
 import {DEFAULT_OPTIONS} from '../config'
 
-import * as deepcopy from 'deepcopy'
+import deepcopy from 'deepcopy'
 import deepmerge from 'deepmerge'
 import {isPlainObject} from 'is-plain-object'
 

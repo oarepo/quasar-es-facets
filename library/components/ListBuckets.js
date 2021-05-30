@@ -2,8 +2,7 @@ import { computed, defineComponent, getCurrentInstance, h, reactive, ref, resolv
 import { useFacetProps } from '../composition/facet';
 import { useBucketsComponents } from '../composition/buckets';
 import { useQuasar } from 'quasar';
-import deepcopy from 'deepcopy';
-
+import deepcopy from 'deepcopy'
 
 export default defineComponent({
   name: 'FacetsBuckets',
